@@ -8,14 +8,14 @@
 import Foundation
 import UIKit
 
-class DIDMotifUtils {
+public class DIDMotifUtils {
     static let backgroundColors = ["#E94E4E", "#E41115", "#E96B4E", "#E5502E", "#E98F4E", "#E57A2E", "#E98F4E", "#E5A82E", "#DACD5D", "#DAC825",
                                    "#BDD13D", "#C8E31C", "#AEE94E", "#7FD558", "#52CC19", "#4FC469", "#59DE9C", "#19CC73", "#5ED9D1", "#19CCC0",
                                    "#4ED7E9", "#19B7CC", "#45ACE8", "#1C97DE", "#4E68E9", "#2E4DE5", "#7F4EE9", "#682EE5", "#BE65E7", "#AF40E2",
                                    "#DF58C2", "#E94E8F"]
 }
 // MARK: - Shape Path
-extension DIDMotifUtils {
+public extension DIDMotifUtils {
     // 默认参数，为防止崩溃，给个默认数据
     static let errorIndexs = (0, Array.init(repeating: 0, count: 8))
     
@@ -76,7 +76,7 @@ extension DIDMotifUtils {
 }
 
 // MARK: - Shape Path
-extension DIDMotifUtils {
+public extension DIDMotifUtils {
     /// 根据当前frame的任一边长算出的居中path
     /// - Parameter side: 当前frame的长或宽（理论讲DIDMotifView的frame应该都是长宽相等的）
     /// - Returns: path
