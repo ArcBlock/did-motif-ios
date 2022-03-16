@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import arc-mutibase-encode-swift
 
 public class DIDMotifUtils {
     static let backgroundColors = ["#E94E4E", "#E41115", "#E96B4E", "#E5502E", "#E98F4E", "#E57A2E", "#E98F4E", "#E5A82E", "#DACD5D", "#DAC825",
@@ -25,7 +26,7 @@ public extension DIDMotifUtils {
    static func getMotifIndexs(did: String) -> (Int, [Int]) {
         // base58 格式的 DID 解码为 binary DID string
         // 即 https://github.com/ArcBlock/ABT-DID-Protocol#create-did (step9 -> step8)
-       let decoded = Data(base58Encoded: did.removeDIDPrefix())?.bytes.compactMap({ Int($0) }) ?? []
+       let decoded = Data(multibaseEncoded: did.removeDIDPrefix())?.bytes.compactMap({ Int($0) }) ?? []
         
        guard decoded.count == 26 else {
            return errorIndexs
