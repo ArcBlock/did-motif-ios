@@ -66,9 +66,6 @@ extension DIDMotifView {
     }
     
     private func setupUI() {
-        guard let address = address else {
-            return
-        }
         if let colorIndex = info?.0,
            let hexStr = DIDMotifUtils.backgroundColors.objectAtIndexSafely(index: colorIndex) {
             shapeLayer.fillColor = UIColor(hex: hexStr).cgColor
@@ -100,9 +97,6 @@ extension DIDMotifView {
     }
     
     private func layoutItems() {
-        guard let address = address else {
-            return
-        }
         let gridWidth = min(self.frame.width/9, self.frame.height)
         
         let points = info?.1.map({ CGPoint(x: CGFloat($0/8 + 1)*gridWidth, y: CGFloat($0%8 + 1)*gridWidth) })
@@ -150,7 +144,7 @@ extension DIDMotifView {
 
 // MARK: Public
 extension DIDMotifView {
-    func renderWith(address: String, shape: DIDMotifShage?) {
+    public func renderWith(address: String, shape: DIDMotifShage?) {
         self.address = address
         self.shape = shape
         
