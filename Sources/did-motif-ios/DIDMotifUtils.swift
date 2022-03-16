@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-import arc-mutibase-encode-swift
 
 public class DIDMotifUtils {
     static let backgroundColors = ["#E94E4E", "#E41115", "#E96B4E", "#E5502E", "#E98F4E", "#E57A2E", "#E98F4E", "#E5A82E", "#DACD5D", "#DAC825",

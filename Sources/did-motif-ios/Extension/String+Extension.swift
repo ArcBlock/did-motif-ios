@@ -26,7 +26,7 @@ extension String {
         if encodedDid.hasPrefix("0x") {
             encodedDid.removeFirst(2)
         }
-        guard let encodedDidData = Data.init(base58Encoded: encodedDid) else {
+        guard let encodedDidData = Data.init(multibaseEncoded: encodedDid) else {
             return nil
         }
 
