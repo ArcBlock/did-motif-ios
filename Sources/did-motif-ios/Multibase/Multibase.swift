@@ -1,6 +1,5 @@
 import Foundation
-
-public enum BaseEncoding: UInt8 {
+ enum BaseEncoding: UInt8 {
     case identity          = 000 // null
     case base1             = 049 // 1
     case base2             = 048 // 0
@@ -24,18 +23,18 @@ public enum BaseEncoding: UInt8 {
     case base64URLPad      = 085 // U
 }
 
-public extension String {
+extension String {
 
-    public var baseEncoding: BaseEncoding {
+    var baseEncoding: BaseEncoding {
         let base = Array(self.utf8)[0]
         return BaseEncoding(rawValue: base)!
     }
 
 }
 
-public extension Data {
+extension Data {
 
-    public func multibaseEncodedString(inBase base: BaseEncoding) -> String {
+    func multibaseEncodedString(inBase base: BaseEncoding) -> String {
         let byteString = [base.rawValue] + self
         let stringBaseEncoding = String(bytes: [base.rawValue], encoding: String.Encoding.utf8)!
 
@@ -67,7 +66,7 @@ public extension Data {
         }
     }
 
-    public init?(multibaseEncoded multibaseString: String) {
+    init?(multibaseEncoded multibaseString: String) {
         let byteString = Data(multibaseString.utf8)
         guard byteString.count > 0,
             let base = BaseEncoding(rawValue: byteString[0]) else { return nil }
