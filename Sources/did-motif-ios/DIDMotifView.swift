@@ -16,7 +16,7 @@ public enum DIDMotifShage {
 }
 
 /// 理论上讲这个view都是正方形，根据type去裁剪展示区域
-class DIDMotifView: UIView {
+public class DIDMotifView: UIView {
     // MARK: - Public Properties
     private var address: String?
     
@@ -47,7 +47,7 @@ class DIDMotifView: UIView {
         print("DIDMotifView deinit")
     }
     
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         setupUI()
     }
