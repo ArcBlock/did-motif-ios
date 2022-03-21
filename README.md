@@ -1,4 +1,4 @@
-# did-motif-ios
+# DID Motif iOS
 
 [![Swift Package Manager compatible](https://img.shields.io/badge/SPM-compatible-brightgreen.svg?style=flat&colorA=28a745&&colorB=4E4E4E)](https://github.com/apple/swift-package-manager)
 
@@ -68,7 +68,7 @@ motifView.renderWith(address: "zjdov4taExQmjyFV4Jt5YPGF5yVUg57pPtQY", shape: nil
 
 ## License
 
-Copyright 2018-2019 ArcBlock
+Copyright 2018-2022 ArcBlock
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
