@@ -28,11 +28,42 @@ let motifView = DIDMotifView()
 motifView.frame = CGRect(x: 0, y: 0, width: 40, height: 40) 
 ```
 
-2. Render
+2. Render with specific shape
 
 ```
-motifView.renderWith(address: "zNKb2kbCvDHo9APDhD1trbAV1EVoYF6PcSJ3", shape: DIDMotifShage.square)
+motifView.renderWith(address: "zNKb2kbCvDHo9APDhD1trbAV1EVoYF6PcSJ3", shape: .square)
+
+motifView.renderWith(address: "zNKb2kbCvDHo9APDhD1trbAV1EVoYF6PcSJ3", shape: .circle)
+        
+motifView.renderWith(address: "zNKb2kbCvDHo9APDhD1trbAV1EVoYF6PcSJ3", shape: .rectangle)
+        
+motifView.renderWith(address: "zNKb2kbCvDHo9APDhD1trbAV1EVoYF6PcSJ3", shape: .hexagon)
 ```
+![image](https://user-images.githubusercontent.com/13864988/159204677-43d31052-84d4-47e1-9e88-380de56643ab.png)
+![image](https://user-images.githubusercontent.com/13864988/159204740-6a8d90d9-bd51-4763-8a54-befc14bd7553.png)
+![image](https://user-images.githubusercontent.com/13864988/159204697-e93fcb40-4699-4ba0-a412-5d6f012b5ba5.png)
+![image](https://user-images.githubusercontent.com/13864988/159204706-417383eb-551a-4c23-b14d-3157830fd829.png)
+
+
+3. Render with origin shape by DID
+
+```
+// DApp
+motifView.renderWith(address: "zNKeLKixvCM32TkVM1zmRDdAU3bvm3dTtAcM", shape: nil)
+
+// TOKEN: PLAY 3
+motifView.renderWith(address: "z35n3kwEXMakjzfaf24DLd67dTJRByTf8y1FN", shape: nil)
+        
+// Account
+motifView.renderWith(address: "z1imdeFgjsR7n1PhBpyW7uu1zr617sCN64x", shape: nil)
+        
+// NFT
+motifView.renderWith(address: "zjdov4taExQmjyFV4Jt5YPGF5yVUg57pPtQY", shape: nil)
+```
+![image](https://user-images.githubusercontent.com/13864988/159204842-6ca5e443-8786-4bee-9f2c-3f9a510e298b.png)
+![image](https://user-images.githubusercontent.com/13864988/159204780-b929e0e1-96a4-43a5-8450-4d30c66194b0.png)
+![image](https://user-images.githubusercontent.com/13864988/159204868-f221845a-6ff3-4f76-ba69-a23c943883c5.png)
+![image](https://user-images.githubusercontent.com/13864988/159204795-07f7d4b3-142f-44f1-b905-c3d2f19a01be.png)
 
 
 ## License
