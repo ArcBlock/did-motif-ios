@@ -22,7 +22,7 @@ public extension DIDMotifUtils {
     /// 获取DID Motif的绘制坐标
     /// - Parameter did: did
     /// - Returns: (colorIndex, [cordinateIndex])
-   static func getMotifIndexs(did: String) -> (Int, [Int]) {
+    public static func getMotifIndexs(did: String) -> (Int, [Int]) {
         // base58 格式的 DID 解码为 binary DID string
         // 即 https://github.com/ArcBlock/ABT-DID-Protocol#create-did (step9 -> step8)
        let decoded = Data(multibaseEncoded: did.removeDIDPrefix())?.bytes.compactMap({ Int($0) }) ?? []
@@ -45,7 +45,7 @@ public extension DIDMotifUtils {
         return (colorIndex, positionIndexes)
     }
     
-    static func getMotifInfo(did: String) -> (Int, [Int], DIDMotifShage) {
+    public static func getMotifInfo(did: String) -> (Int, [Int], DIDMotifShage) {
         let (colorIndex, positionIndexs) = getMotifIndexs(did: did)
         let roleType = did.roleType()
         
