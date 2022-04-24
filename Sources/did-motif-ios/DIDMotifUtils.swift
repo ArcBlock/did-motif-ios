@@ -131,7 +131,7 @@ public extension DIDMotifUtils {
         return UIBezierPath.init(roundedRect: CGRect(x: 0, y: 0, width: side, height: side), cornerRadius: side/2)
     }
     
-    static func cornerRadiusWith(side: CGFloat) -> CGFloat {
+    public static func cornerRadiusWith(side: CGFloat) -> CGFloat {
         return side > 80 ? 10 : floor(0.1*side + 2)
     }
 
