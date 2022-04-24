@@ -111,14 +111,14 @@ public extension DIDMotifUtils {
     /// 根据当前frame的任一边长算出的居中path
     /// - Parameter side: 当前frame的长或宽（理论讲DIDMotifView的frame应该都是长宽相等的）
     /// - Returns: path
-    static func squarePathWith(side: CGFloat) -> UIBezierPath {
+    public static func squarePathWith(side: CGFloat) -> UIBezierPath {
         return UIBezierPath.init(roundedRect: CGRect(x: 0, y: 0, width: side, height: side), cornerRadius: cornerRadiusWith(side: side))
     }
     
     /// 根据当前frame的任一边长算出的居中path
     /// - Parameter side: 当前frame的长或宽（理论讲DIDMotifView的frame应该都是长宽相等的）
     /// - Returns: path
-    static func rectanglePathWith(side: CGFloat) -> UIBezierPath {
+    public static func rectanglePathWith(side: CGFloat) -> UIBezierPath {
         let height = side*0.7
         let y = (side - height)/2
         return UIBezierPath.init(roundedRect: CGRect(x: 0, y: y, width: side, height: height), cornerRadius: cornerRadiusWith(side: side))
@@ -127,7 +127,7 @@ public extension DIDMotifUtils {
     /// 根据当前frame的任一边长算出的居中path
     /// - Parameter side: 当前frame的长或宽（理论讲DIDMotifView的frame应该都是长宽相等的）
     /// - Returns: path
-    static func circlePathWith(side: CGFloat) -> UIBezierPath {
+    public static func circlePathWith(side: CGFloat) -> UIBezierPath {
         return UIBezierPath.init(roundedRect: CGRect(x: 0, y: 0, width: side, height: side), cornerRadius: side/2)
     }
     
