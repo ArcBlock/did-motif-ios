@@ -24,6 +24,9 @@ public class DIDMotifView: UIView {
     // 若未设置，则shape默认为address解出来的
     private var shape: DIDMotifShage?
     
+    // 是否播放动画
+    private var animated: Bool = true
+    
     // MARK: - Properties
     private lazy var shapeLayer: CAShapeLayer = {
         let layer = CAShapeLayer()
@@ -110,7 +113,9 @@ extension DIDMotifView {
             subLayer.fillColor = UIColor(white: 1, alpha: 0.3).cgColor
             let point = points?.objectAtIndexSafely(index: index) ?? CGPoint.zero
             subLayer.position = point
-            subLayer.add(animTo(point: point), forKey: "move")
+            if animated {
+                subLayer.add(animTo(point: point), forKey: "move")
+            }
         }
     }
     
@@ -144,9 +149,10 @@ extension DIDMotifView {
 
 // MARK: Public
 extension DIDMotifView {
-    public func renderWith(address: String, shape: DIDMotifShage?) {
+    public func renderWith(address: String, shape: DIDMotifShage?, animated: Bool = true) {
         self.address = address
         self.shape = shape
+        self.animated = animated
         
         decodeAddress()
     }
