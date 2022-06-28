@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import did_motif_ios
 
 class ViewController: UIViewController {
     

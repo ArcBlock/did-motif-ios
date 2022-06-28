@@ -13,7 +13,23 @@
 		1ABE84AB27E824D500F86D65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ABE84A927E824D500F86D65 /* Main.storyboard */; };
 		1ABE84AD27E824D700F86D65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ABE84AC27E824D700F86D65 /* Assets.xcassets */; };
 		1ABE84B027E824D700F86D65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ABE84AE27E824D700F86D65 /* LaunchScreen.storyboard */; };
-		1ABE84B927E8254300F86D65 /* did-motif-ios in Frameworks */ = {isa = PBXBuildFile; productRef = 1ABE84B827E8254300F86D65 /* did-motif-ios */; };
+		1AEE1F30286AF939008AAF5A /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F1D286AF939008AAF5A /* UIColor+Extension.swift */; };
+		1AEE1F31286AF939008AAF5A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F1E286AF939008AAF5A /* String+Extension.swift */; };
+		1AEE1F32286AF939008AAF5A /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F1F286AF939008AAF5A /* Data+Extension.swift */; };
+		1AEE1F33286AF939008AAF5A /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F20286AF939008AAF5A /* Array+Extension.swift */; };
+		1AEE1F34286AF939008AAF5A /* DIDRoleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F21286AF939008AAF5A /* DIDRoleType.swift */; };
+		1AEE1F35286AF939008AAF5A /* DIDMotifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F22286AF939008AAF5A /* DIDMotifView.swift */; };
+		1AEE1F36286AF939008AAF5A /* Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F24286AF939008AAF5A /* Encoding.swift */; };
+		1AEE1F37286AF939008AAF5A /* Base64String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F25286AF939008AAF5A /* Base64String.swift */; };
+		1AEE1F38286AF939008AAF5A /* Base16String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F26286AF939008AAF5A /* Base16String.swift */; };
+		1AEE1F39286AF939008AAF5A /* Multibase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F27286AF939008AAF5A /* Multibase.swift */; };
+		1AEE1F3A286AF939008AAF5A /* Base58String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F28286AF939008AAF5A /* Base58String.swift */; };
+		1AEE1F3B286AF939008AAF5A /* Base16.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F2A286AF939008AAF5A /* Base16.swift */; };
+		1AEE1F3C286AF939008AAF5A /* Base32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F2B286AF939008AAF5A /* Base32.swift */; };
+		1AEE1F3D286AF939008AAF5A /* shim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F2C286AF939008AAF5A /* shim.swift */; };
+		1AEE1F3E286AF939008AAF5A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F2D286AF939008AAF5A /* StringExtension.swift */; };
+		1AEE1F3F286AF939008AAF5A /* Base32String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F2E286AF939008AAF5A /* Base32String.swift */; };
+		1AEE1F40286AF939008AAF5A /* DIDMotifUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F2F286AF939008AAF5A /* DIDMotifUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +41,23 @@
 		1ABE84AC27E824D700F86D65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1ABE84AF27E824D700F86D65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1ABE84B127E824D700F86D65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AEE1F1D286AF939008AAF5A /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		1AEE1F1E286AF939008AAF5A /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		1AEE1F1F286AF939008AAF5A /* Data+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		1AEE1F20286AF939008AAF5A /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		1AEE1F21286AF939008AAF5A /* DIDRoleType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIDRoleType.swift; sourceTree = "<group>"; };
+		1AEE1F22286AF939008AAF5A /* DIDMotifView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIDMotifView.swift; sourceTree = "<group>"; };
+		1AEE1F24286AF939008AAF5A /* Encoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encoding.swift; sourceTree = "<group>"; };
+		1AEE1F25286AF939008AAF5A /* Base64String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base64String.swift; sourceTree = "<group>"; };
+		1AEE1F26286AF939008AAF5A /* Base16String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base16String.swift; sourceTree = "<group>"; };
+		1AEE1F27286AF939008AAF5A /* Multibase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Multibase.swift; sourceTree = "<group>"; };
+		1AEE1F28286AF939008AAF5A /* Base58String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base58String.swift; sourceTree = "<group>"; };
+		1AEE1F2A286AF939008AAF5A /* Base16.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base16.swift; sourceTree = "<group>"; };
+		1AEE1F2B286AF939008AAF5A /* Base32.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base32.swift; sourceTree = "<group>"; };
+		1AEE1F2C286AF939008AAF5A /* shim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shim.swift; sourceTree = "<group>"; };
+		1AEE1F2D286AF939008AAF5A /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		1AEE1F2E286AF939008AAF5A /* Base32String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base32String.swift; sourceTree = "<group>"; };
+		1AEE1F2F286AF939008AAF5A /* DIDMotifUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIDMotifUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,7 +65,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ABE84B927E8254300F86D65 /* did-motif-ios in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +90,7 @@
 		1ABE84A227E824D500F86D65 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				1AEE1F1A286AF939008AAF5A /* Sources */,
 				1ABE84A327E824D500F86D65 /* AppDelegate.swift */,
 				1ABE84A527E824D500F86D65 /* SceneDelegate.swift */,
 				1ABE84A727E824D500F86D65 /* ViewController.swift */,
@@ -67,6 +100,63 @@
 				1ABE84B127E824D700F86D65 /* Info.plist */,
 			);
 			path = Example;
+			sourceTree = "<group>";
+		};
+		1AEE1F1A286AF939008AAF5A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1AEE1F1B286AF939008AAF5A /* did-motif-ios */,
+			);
+			name = Sources;
+			path = ../../Sources;
+			sourceTree = "<group>";
+		};
+		1AEE1F1B286AF939008AAF5A /* did-motif-ios */ = {
+			isa = PBXGroup;
+			children = (
+				1AEE1F1C286AF939008AAF5A /* Extension */,
+				1AEE1F21286AF939008AAF5A /* DIDRoleType.swift */,
+				1AEE1F22286AF939008AAF5A /* DIDMotifView.swift */,
+				1AEE1F23286AF939008AAF5A /* Multibase */,
+				1AEE1F2F286AF939008AAF5A /* DIDMotifUtils.swift */,
+			);
+			path = "did-motif-ios";
+			sourceTree = "<group>";
+		};
+		1AEE1F1C286AF939008AAF5A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1AEE1F1D286AF939008AAF5A /* UIColor+Extension.swift */,
+				1AEE1F1E286AF939008AAF5A /* String+Extension.swift */,
+				1AEE1F1F286AF939008AAF5A /* Data+Extension.swift */,
+				1AEE1F20286AF939008AAF5A /* Array+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1AEE1F23286AF939008AAF5A /* Multibase */ = {
+			isa = PBXGroup;
+			children = (
+				1AEE1F24286AF939008AAF5A /* Encoding.swift */,
+				1AEE1F25286AF939008AAF5A /* Base64String.swift */,
+				1AEE1F26286AF939008AAF5A /* Base16String.swift */,
+				1AEE1F27286AF939008AAF5A /* Multibase.swift */,
+				1AEE1F28286AF939008AAF5A /* Base58String.swift */,
+				1AEE1F29286AF939008AAF5A /* Base32 */,
+				1AEE1F2E286AF939008AAF5A /* Base32String.swift */,
+			);
+			path = Multibase;
+			sourceTree = "<group>";
+		};
+		1AEE1F29286AF939008AAF5A /* Base32 */ = {
+			isa = PBXGroup;
+			children = (
+				1AEE1F2A286AF939008AAF5A /* Base16.swift */,
+				1AEE1F2B286AF939008AAF5A /* Base32.swift */,
+				1AEE1F2C286AF939008AAF5A /* shim.swift */,
+				1AEE1F2D286AF939008AAF5A /* StringExtension.swift */,
+			);
+			path = Base32;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,7 +176,6 @@
 			);
 			name = Example;
 			packageProductDependencies = (
-				1ABE84B827E8254300F86D65 /* did-motif-ios */,
 			);
 			productName = Example;
 			productReference = 1ABE84A027E824D500F86D65 /* Example.app */;
@@ -117,7 +206,6 @@
 			);
 			mainGroup = 1ABE849727E824D500F86D65;
 			packageReferences = (
-				1ABE84B727E8254300F86D65 /* XCRemoteSwiftPackageReference "did-motif-ios" */,
 			);
 			productRefGroup = 1ABE84A127E824D500F86D65 /* Products */;
 			projectDirPath = "";
@@ -146,9 +234,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AEE1F3F286AF939008AAF5A /* Base32String.swift in Sources */,
+				1AEE1F39286AF939008AAF5A /* Multibase.swift in Sources */,
 				1ABE84A827E824D500F86D65 /* ViewController.swift in Sources */,
+				1AEE1F34286AF939008AAF5A /* DIDRoleType.swift in Sources */,
 				1ABE84A427E824D500F86D65 /* AppDelegate.swift in Sources */,
+				1AEE1F3A286AF939008AAF5A /* Base58String.swift in Sources */,
+				1AEE1F37286AF939008AAF5A /* Base64String.swift in Sources */,
+				1AEE1F35286AF939008AAF5A /* DIDMotifView.swift in Sources */,
+				1AEE1F3C286AF939008AAF5A /* Base32.swift in Sources */,
 				1ABE84A627E824D500F86D65 /* SceneDelegate.swift in Sources */,
+				1AEE1F31286AF939008AAF5A /* String+Extension.swift in Sources */,
+				1AEE1F36286AF939008AAF5A /* Encoding.swift in Sources */,
+				1AEE1F33286AF939008AAF5A /* Array+Extension.swift in Sources */,
+				1AEE1F3D286AF939008AAF5A /* shim.swift in Sources */,
+				1AEE1F30286AF939008AAF5A /* UIColor+Extension.swift in Sources */,
+				1AEE1F40286AF939008AAF5A /* DIDMotifUtils.swift in Sources */,
+				1AEE1F3E286AF939008AAF5A /* StringExtension.swift in Sources */,
+				1AEE1F38286AF939008AAF5A /* Base16String.swift in Sources */,
+				1AEE1F32286AF939008AAF5A /* Data+Extension.swift in Sources */,
+				1AEE1F3B286AF939008AAF5A /* Base16.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,25 +473,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		1ABE84B727E8254300F86D65 /* XCRemoteSwiftPackageReference "did-motif-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ArcBlock/did-motif-ios";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		1ABE84B827E8254300F86D65 /* did-motif-ios */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1ABE84B727E8254300F86D65 /* XCRemoteSwiftPackageReference "did-motif-ios" */;
-			productName = "did-motif-ios";
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1ABE849827E824D500F86D65 /* Project object */;
 }
