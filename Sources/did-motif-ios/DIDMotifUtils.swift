@@ -132,8 +132,8 @@ public extension DIDMotifUtils {
     }
     
     public static func cornerRadiusWith(side: CGFloat) -> CGFloat {
-        // 大于80时固定10 小于20时固定1
-        return side > 80 ? 10 : (side <= 20 ? 1 : floor(0.1*side + 2))
+        // 大于80时固定10 小于20时固定1.5
+        return side > 80 ? 10 : (side <= 20 ? 1.5 : floor(0.1*side + 2))
     }
 
 }
