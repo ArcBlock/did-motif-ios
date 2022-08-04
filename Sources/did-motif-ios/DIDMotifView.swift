@@ -110,7 +110,7 @@ extension DIDMotifView {
             subLayer.isHidden = false
             subLayer.path = DIDMotifUtils.hexagonPathWith(side: itemWidth).cgPath
             subLayer.bounds = CGRect(x: 0, y: 0, width: itemWidth, height: itemWidth)
-            subLayer.fillColor = UIColor(white: 1, alpha: 0.3).cgColor
+            subLayer.fillColor = UIColor(white: 1, alpha: 0.5).cgColor
             let point = points?.objectAtIndexSafely(index: index) ?? CGPoint.zero
             subLayer.position = point
             if animated {
