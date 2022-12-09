@@ -58,14 +58,7 @@ public class DIDMotifView: UIView {
 // MARK: - UI Functions
 extension DIDMotifView {
     private func commonInit() {
-        layer.addSublayer(shapeLayer)
-        for _ in 0...7 {
-            let subLayer = CAShapeLayer()
-            subLayer.isHidden = true
-            subLayer.fillColor = UIColor(white: 1, alpha: 0.5).cgColor
-            shapeLayer.addSublayer(subLayer)
-            hexagonLayers.append(subLayer)
-        }
+        addSubLayers()
     }
     
     private func setupUI() {
@@ -132,6 +125,25 @@ extension DIDMotifView {
         anim.initialVelocity = 4
         return anim
     }
+    
+    private func addSubLayers() {
+        layer.addSublayer(shapeLayer)
+        for _ in 0...7 {
+            let subLayer = CAShapeLayer()
+            subLayer.isHidden = true
+            subLayer.fillColor = UIColor(white: 1, alpha: 0.5).cgColor
+            shapeLayer.addSublayer(subLayer)
+            hexagonLayers.append(subLayer)
+        }
+    }
+    
+    private func clearSubLayers() {
+        shapeLayer.removeFromSuperlayer()
+        hexagonLayers.forEach { subLayer in
+            subLayer.removeFromSuperlayer()
+        }
+        hexagonLayers.removeAll()
+    }
 }
 // MARK: - Action Functions
 extension DIDMotifView {
@@ -153,7 +165,9 @@ extension DIDMotifView {
         self.address = address
         self.shape = shape
         self.animated = animated
-        
+                
+        clearSubLayers()
+        addSubLayers()
         decodeAddress()
     }
 }
