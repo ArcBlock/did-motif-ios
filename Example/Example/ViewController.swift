@@ -131,16 +131,16 @@ class ViewController: UIViewController {
     }
     
     private func renderWithSpecificShape() {
-        motifView1.renderWith(address: "zNKb2kbCvDHo9APDhD1trbAV1EVoYF6PcSJ3", shape: .square)
+        motifView1.renderWith(address: "zNKb2kbCvDHo9APDhD1trbAV1EVoYF6PcSJ3", shape: .square, animated: false)
         didLabel1.text = "zNKb2kbCvDHo9APDhD1trbAV1EVoYF6PcSJ3"
 
-        motifView2.renderWith(address: "zNKb2kbCvDHo9APDhD1trbAV1EVoYF6PcSJ3", shape: .circle)
+        motifView2.renderWith(address: "zNKb2kbCvDHo9APDhD1trbAV1EVoYF6PcSJ3", shape: .circle, animated: false)
         didLabel2.text = "zNKb2kbCvDHo9APDhD1trbAV1EVoYF6PcSJ3"
         
-        motifView3.renderWith(address: "zNKb2kbCvDHo9APDhD1trbAV1EVoYF6PcSJ3", shape: .rectangle)
+        motifView3.renderWith(address: "zNKb2kbCvDHo9APDhD1trbAV1EVoYF6PcSJ3", shape: .rectangle, animated: false)
         didLabel3.text = "zNKb2kbCvDHo9APDhD1trbAV1EVoYF6PcSJ3"
         
-        motifView4.renderWith(address: "zNKb2kbCvDHo9APDhD1trbAV1EVoYF6PcSJ3", shape: .hexagon)
+        motifView4.renderWith(address: "zNKb2kbCvDHo9APDhD1trbAV1EVoYF6PcSJ3", shape: .hexagon, animated: false)
         didLabel4.text = "zNKb2kbCvDHo9APDhD1trbAV1EVoYF6PcSJ3"
     }
     
