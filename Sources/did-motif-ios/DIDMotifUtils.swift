@@ -45,6 +45,9 @@ public extension DIDMotifUtils {
         return (colorIndex, positionIndexes)
     }
     
+    /// 获取DID Motif的绘制信息
+    /// - Parameter did: DID
+    /// - Returns: (colorIndex, [cordinateIndex], DIDMotifShage)
     public static func getMotifInfo(did: String) -> (Int, [Int], DIDMotifShage) {
         let (colorIndex, positionIndexs) = getMotifIndexs(did: did)
         let roleType = did.roleType()
@@ -64,6 +67,30 @@ public extension DIDMotifUtils {
         }
         
         return (colorIndex, positionIndexs, shape)
+    }
+        
+    /// 根据 DID 获取 Motif的主色
+    /// - Parameter did: DID
+    /// - Returns: 颜色
+    static func getDIDMotifColor(did: String) -> UIColor {
+        let decoded = Data(multibaseEncoded: did.removeDIDPrefix())?.bytes.compactMap({ Int($0) }) ?? []
+        let errDefaultColor = UIColor.white
+         
+        guard decoded.count == 26 else {
+            return errDefaultColor
+        }
+                
+         // 剔除前 2 个字节 (DID Type)，此时还剩 24 bytes，用来随机背景色和位置
+         let striped = decoded.suffix(from: 2)
+        
+         // 对前 8 个 bytes 的每个 byte 求和，对 32 求模，结果为 colorIndex
+        let colorIndex = striped.prefix(8).reduce(0, +) % 32
+        
+        guard let hexColorStr = Self.backgroundColors.objectAtIndexSafely(index: colorIndex) else {
+            return errDefaultColor
+        }
+        
+        return UIColor(hex: hexColorStr)
     }
     
     static func testCase() {
