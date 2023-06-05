@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import ArcBlockSDK
 
 public class DIDMotifUtils {
     public static let backgroundColors = ["#E94E4E", "#E41115", "#E96B4E", "#E5502E", "#E98F4E", "#E57A2E", "#E98F4E", "#E5A82E", "#DACD5D", "#DAC825",
@@ -50,7 +51,7 @@ public extension DIDMotifUtils {
     /// - Returns: (colorIndex, [cordinateIndex], DIDMotifShage)
     static func getMotifInfo(did: String) -> (Int, [Int], DIDMotifShage) {
         let (colorIndex, positionIndexs) = getMotifIndexs(did: did)
-        let roleType = did.roleType()
+        let roleType = DidHelper.calculateTypesFromDid(did: did)?.roleType        
         
         var shape = DIDMotifShage.rectangle
         switch roleType {

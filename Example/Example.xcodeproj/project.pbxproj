@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A3D986C2A2DCFA5001B31D9 /* ArcBlockSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 1A3D986B2A2DCFA5001B31D9 /* ArcBlockSDK */; };
 		1ABE84A427E824D500F86D65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABE84A327E824D500F86D65 /* AppDelegate.swift */; };
 		1ABE84A627E824D500F86D65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABE84A527E824D500F86D65 /* SceneDelegate.swift */; };
 		1ABE84A827E824D500F86D65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABE84A727E824D500F86D65 /* ViewController.swift */; };
@@ -17,18 +18,7 @@
 		1AEE1F31286AF939008AAF5A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F1E286AF939008AAF5A /* String+Extension.swift */; };
 		1AEE1F32286AF939008AAF5A /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F1F286AF939008AAF5A /* Data+Extension.swift */; };
 		1AEE1F33286AF939008AAF5A /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F20286AF939008AAF5A /* Array+Extension.swift */; };
-		1AEE1F34286AF939008AAF5A /* DIDRoleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F21286AF939008AAF5A /* DIDRoleType.swift */; };
 		1AEE1F35286AF939008AAF5A /* DIDMotifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F22286AF939008AAF5A /* DIDMotifView.swift */; };
-		1AEE1F36286AF939008AAF5A /* Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F24286AF939008AAF5A /* Encoding.swift */; };
-		1AEE1F37286AF939008AAF5A /* Base64String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F25286AF939008AAF5A /* Base64String.swift */; };
-		1AEE1F38286AF939008AAF5A /* Base16String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F26286AF939008AAF5A /* Base16String.swift */; };
-		1AEE1F39286AF939008AAF5A /* Multibase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F27286AF939008AAF5A /* Multibase.swift */; };
-		1AEE1F3A286AF939008AAF5A /* Base58String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F28286AF939008AAF5A /* Base58String.swift */; };
-		1AEE1F3B286AF939008AAF5A /* Base16.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F2A286AF939008AAF5A /* Base16.swift */; };
-		1AEE1F3C286AF939008AAF5A /* Base32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F2B286AF939008AAF5A /* Base32.swift */; };
-		1AEE1F3D286AF939008AAF5A /* shim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F2C286AF939008AAF5A /* shim.swift */; };
-		1AEE1F3E286AF939008AAF5A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F2D286AF939008AAF5A /* StringExtension.swift */; };
-		1AEE1F3F286AF939008AAF5A /* Base32String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F2E286AF939008AAF5A /* Base32String.swift */; };
 		1AEE1F40286AF939008AAF5A /* DIDMotifUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE1F2F286AF939008AAF5A /* DIDMotifUtils.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,18 +35,7 @@
 		1AEE1F1E286AF939008AAF5A /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		1AEE1F1F286AF939008AAF5A /* Data+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
 		1AEE1F20286AF939008AAF5A /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
-		1AEE1F21286AF939008AAF5A /* DIDRoleType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIDRoleType.swift; sourceTree = "<group>"; };
 		1AEE1F22286AF939008AAF5A /* DIDMotifView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIDMotifView.swift; sourceTree = "<group>"; };
-		1AEE1F24286AF939008AAF5A /* Encoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encoding.swift; sourceTree = "<group>"; };
-		1AEE1F25286AF939008AAF5A /* Base64String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base64String.swift; sourceTree = "<group>"; };
-		1AEE1F26286AF939008AAF5A /* Base16String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base16String.swift; sourceTree = "<group>"; };
-		1AEE1F27286AF939008AAF5A /* Multibase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Multibase.swift; sourceTree = "<group>"; };
-		1AEE1F28286AF939008AAF5A /* Base58String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base58String.swift; sourceTree = "<group>"; };
-		1AEE1F2A286AF939008AAF5A /* Base16.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base16.swift; sourceTree = "<group>"; };
-		1AEE1F2B286AF939008AAF5A /* Base32.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base32.swift; sourceTree = "<group>"; };
-		1AEE1F2C286AF939008AAF5A /* shim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shim.swift; sourceTree = "<group>"; };
-		1AEE1F2D286AF939008AAF5A /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
-		1AEE1F2E286AF939008AAF5A /* Base32String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base32String.swift; sourceTree = "<group>"; };
 		1AEE1F2F286AF939008AAF5A /* DIDMotifUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIDMotifUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A3D986C2A2DCFA5001B31D9 /* ArcBlockSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,9 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				1AEE1F1C286AF939008AAF5A /* Extension */,
-				1AEE1F21286AF939008AAF5A /* DIDRoleType.swift */,
 				1AEE1F22286AF939008AAF5A /* DIDMotifView.swift */,
-				1AEE1F23286AF939008AAF5A /* Multibase */,
 				1AEE1F2F286AF939008AAF5A /* DIDMotifUtils.swift */,
 			);
 			path = "did-motif-ios";
@@ -132,31 +110,6 @@
 				1AEE1F20286AF939008AAF5A /* Array+Extension.swift */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		1AEE1F23286AF939008AAF5A /* Multibase */ = {
-			isa = PBXGroup;
-			children = (
-				1AEE1F24286AF939008AAF5A /* Encoding.swift */,
-				1AEE1F25286AF939008AAF5A /* Base64String.swift */,
-				1AEE1F26286AF939008AAF5A /* Base16String.swift */,
-				1AEE1F27286AF939008AAF5A /* Multibase.swift */,
-				1AEE1F28286AF939008AAF5A /* Base58String.swift */,
-				1AEE1F29286AF939008AAF5A /* Base32 */,
-				1AEE1F2E286AF939008AAF5A /* Base32String.swift */,
-			);
-			path = Multibase;
-			sourceTree = "<group>";
-		};
-		1AEE1F29286AF939008AAF5A /* Base32 */ = {
-			isa = PBXGroup;
-			children = (
-				1AEE1F2A286AF939008AAF5A /* Base16.swift */,
-				1AEE1F2B286AF939008AAF5A /* Base32.swift */,
-				1AEE1F2C286AF939008AAF5A /* shim.swift */,
-				1AEE1F2D286AF939008AAF5A /* StringExtension.swift */,
-			);
-			path = Base32;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +129,7 @@
 			);
 			name = Example;
 			packageProductDependencies = (
+				1A3D986B2A2DCFA5001B31D9 /* ArcBlockSDK */,
 			);
 			productName = Example;
 			productReference = 1ABE84A027E824D500F86D65 /* Example.app */;
@@ -206,6 +160,7 @@
 			);
 			mainGroup = 1ABE849727E824D500F86D65;
 			packageReferences = (
+				1A3D986A2A2DCFA5001B31D9 /* XCRemoteSwiftPackageReference "arcblock-ios-sdk" */,
 			);
 			productRefGroup = 1ABE84A127E824D500F86D65 /* Products */;
 			projectDirPath = "";
@@ -234,26 +189,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AEE1F3F286AF939008AAF5A /* Base32String.swift in Sources */,
-				1AEE1F39286AF939008AAF5A /* Multibase.swift in Sources */,
 				1ABE84A827E824D500F86D65 /* ViewController.swift in Sources */,
-				1AEE1F34286AF939008AAF5A /* DIDRoleType.swift in Sources */,
 				1ABE84A427E824D500F86D65 /* AppDelegate.swift in Sources */,
-				1AEE1F3A286AF939008AAF5A /* Base58String.swift in Sources */,
-				1AEE1F37286AF939008AAF5A /* Base64String.swift in Sources */,
 				1AEE1F35286AF939008AAF5A /* DIDMotifView.swift in Sources */,
-				1AEE1F3C286AF939008AAF5A /* Base32.swift in Sources */,
 				1ABE84A627E824D500F86D65 /* SceneDelegate.swift in Sources */,
 				1AEE1F31286AF939008AAF5A /* String+Extension.swift in Sources */,
-				1AEE1F36286AF939008AAF5A /* Encoding.swift in Sources */,
 				1AEE1F33286AF939008AAF5A /* Array+Extension.swift in Sources */,
-				1AEE1F3D286AF939008AAF5A /* shim.swift in Sources */,
 				1AEE1F30286AF939008AAF5A /* UIColor+Extension.swift in Sources */,
 				1AEE1F40286AF939008AAF5A /* DIDMotifUtils.swift in Sources */,
-				1AEE1F3E286AF939008AAF5A /* StringExtension.swift in Sources */,
-				1AEE1F38286AF939008AAF5A /* Base16String.swift in Sources */,
 				1AEE1F32286AF939008AAF5A /* Data+Extension.swift in Sources */,
-				1AEE1F3B286AF939008AAF5A /* Base16.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +417,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1A3D986A2A2DCFA5001B31D9 /* XCRemoteSwiftPackageReference "arcblock-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ArcBlock/arcblock-ios-sdk";
+			requirement = {
+				branch = "spm-support";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1A3D986B2A2DCFA5001B31D9 /* ArcBlockSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A3D986A2A2DCFA5001B31D9 /* XCRemoteSwiftPackageReference "arcblock-ios-sdk" */;
+			productName = ArcBlockSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1ABE849827E824D500F86D65 /* Project object */;
 }
