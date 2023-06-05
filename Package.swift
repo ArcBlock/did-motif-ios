@@ -4,11 +4,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "did-motif-ios",
+    name: "DIDMotif",
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "did-motif-ios",
+            name: "DIDMotif",
             targets: ["did-motif-ios"]),
     ],
     dependencies: [
