@@ -22,7 +22,7 @@ public extension DIDMotifUtils {
     /// 获取DID Motif的绘制坐标
     /// - Parameter did: did
     /// - Returns: (colorIndex, [cordinateIndex])
-    public static func getMotifIndexs(did: String) -> (Int, [Int]) {
+    static func getMotifIndexs(did: String) -> (Int, [Int]) {
         // base58 格式的 DID 解码为 binary DID string
         // 即 https://github.com/ArcBlock/ABT-DID-Protocol#create-did (step9 -> step8)
        let decoded = Data(multibaseEncoded: did.removeDIDPrefix())?.bytes.compactMap({ Int($0) }) ?? []
@@ -48,7 +48,7 @@ public extension DIDMotifUtils {
     /// 获取DID Motif的绘制信息
     /// - Parameter did: DID
     /// - Returns: (colorIndex, [cordinateIndex], DIDMotifShage)
-    public static func getMotifInfo(did: String) -> (Int, [Int], DIDMotifShage) {
+    static func getMotifInfo(did: String) -> (Int, [Int], DIDMotifShage) {
         let (colorIndex, positionIndexs) = getMotifIndexs(did: did)
         let roleType = did.roleType()
         
@@ -107,7 +107,7 @@ public extension DIDMotifUtils {
     /// 根据当前frame的任一边长算出的居中path
     /// - Parameter side: 当前frame的长或宽（理论讲DIDMotifView的frame应该都是长宽相等的）
     /// - Returns: path
-    public static func hexagonPathWith(side: CGFloat) -> UIBezierPath {
+    static func hexagonPathWith(side: CGFloat) -> UIBezierPath {
         let sideLength = side/2 // 六边形边长
         let path = UIBezierPath()
         let utilAngle = Double.pi/3 // 60°
@@ -138,14 +138,14 @@ public extension DIDMotifUtils {
     /// 根据当前frame的任一边长算出的居中path
     /// - Parameter side: 当前frame的长或宽（理论讲DIDMotifView的frame应该都是长宽相等的）
     /// - Returns: path
-    public static func squarePathWith(side: CGFloat) -> UIBezierPath {
+    static func squarePathWith(side: CGFloat) -> UIBezierPath {
         return UIBezierPath.init(roundedRect: CGRect(x: 0, y: 0, width: side, height: side), cornerRadius: cornerRadiusWith(side: side))
     }
     
     /// 根据当前frame的任一边长算出的居中path
     /// - Parameter side: 当前frame的长或宽（理论讲DIDMotifView的frame应该都是长宽相等的）
     /// - Returns: path
-    public static func rectanglePathWith(side: CGFloat) -> UIBezierPath {
+    static func rectanglePathWith(side: CGFloat) -> UIBezierPath {
         let height = side*0.7
         let y = (side - height)/2
         return UIBezierPath.init(roundedRect: CGRect(x: 0, y: y, width: side, height: height), cornerRadius: cornerRadiusWith(side: side))
@@ -154,11 +154,11 @@ public extension DIDMotifUtils {
     /// 根据当前frame的任一边长算出的居中path
     /// - Parameter side: 当前frame的长或宽（理论讲DIDMotifView的frame应该都是长宽相等的）
     /// - Returns: path
-    public static func circlePathWith(side: CGFloat) -> UIBezierPath {
+    static func circlePathWith(side: CGFloat) -> UIBezierPath {
         return UIBezierPath.init(roundedRect: CGRect(x: 0, y: 0, width: side, height: side), cornerRadius: side/2)
     }
     
-    public static func cornerRadiusWith(side: CGFloat) -> CGFloat {
+    static func cornerRadiusWith(side: CGFloat) -> CGFloat {
         // 大于80时固定10 小于20时固定1.5
         return side > 80 ? 10 : (side <= 20 ? 1.5 : floor(0.1*side + 2))
     }

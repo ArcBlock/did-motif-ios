@@ -1,14 +1,18 @@
-// swift-tools-version:5.5
+// swift-tools-version: 5.7
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
-    name: "did-motif-ios",
+    name: "DIDMotif",        
+    platforms: [
+        .macOS(.v10_15), .iOS(.v13)
+    ],    
+
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "did-motif-ios",
+            name: "DIDMotif",
             targets: ["did-motif-ios"]),
     ],
     dependencies: [
@@ -20,9 +24,11 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "did-motif-ios",
-            dependencies: []),
-        .testTarget(
-            name: "did-motif-iosTests",
-            dependencies: ["did-motif-ios"]),
+            // exclude: ["Extension", "Multibase"],
+            linkerSettings: [
+                .linkedFramework("Foundation"),
+                .linkedFramework("UIKit", .when(platforms: [.iOS, .tvOS])),
+                .linkedFramework("AppKit", .when(platforms: [.macOS]))
+                ]),            
     ]
 )
